@@ -83,23 +83,16 @@ Reach out through:
 
 1. Clone the repository or download the ZIP file
    ```
-   git clone https://github.com/yourusername/wanderlust-travel.git
+   git clone https://github.com/hanzla59/travel-recommendation-website.git
    ```
 
 2. Navigate to the project directory
    ```
-   cd wanderlust-travel
+   cd travel-recommendation-website
    ```
 
-3. Open the index.html file in your browser or set up a local server
-   ```
-   # Using Python's built-in server
-   python -m http.server
-   ```
+3. Open the index.html file in your browser 
 
-4. Access the website at `http://localhost:8000`
-
-## Customization
 
 ### Changing Destinations
 Edit the recommendation cards in `index.html` to feature different destinations:
