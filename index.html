@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust - Travel Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="logo">Wanderlust</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Perfect Destination</h1>
+            <p>Personalized travel recommendations based on your preferences</p>
+            <button id="explore-btn">Explore Now</button>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <div class="container">
+            <h2>Welcome to Wanderlust</h2>
+            <p>At Wanderlust, we understand that every traveler is unique. Our mission is to connect you with destinations that match your preferences, whether you're seeking sun-soaked beaches, cultural landmarks, or breathtaking landscapes. Let us help you plan your next unforgettable journey.</p>
+        </div>
+    </section>
+
+    <!-- Recommendation Sections -->
+    <section class="recommendations">
+        <div class="container">
+            <h2>Our Top Recommendations</h2>
+            
+            <!-- Beach Recommendations -->
+            <div class="recommendation-category">
+                <h3>Beach Getaways</h3>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Maldives Beach">
+                        <div class="card-content">
+                            <h4>Maldives</h4>
+                            <p>Crystal clear waters, white sandy beaches, and luxury overwater bungalows make the Maldives a paradise for beach lovers.</p>
+                            <button class="view-details" data-id="maldives">View Details</button>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206" alt="Bali Beach">
+                        <div class="card-content">
+                            <h4>Bali, Indonesia</h4>
+                            <p>Famous for its volcanic beaches, lush rice terraces, and vibrant surfing scene, Bali offers a perfect blend of relaxation and adventure.</p>
+                            <button class="view-details" data-id="bali">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Temple Recommendations -->
+            <div class="recommendation-category">
+                <h3>Temple Explorations</h3>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <img src="https://images.unsplash.com/photo-1580977251946-c5488f14b56a" alt="Angkor Wat">
+                        <div class="card-content">
+                            <h4>Angkor Wat, Cambodia</h4>
+                            <p>The largest religious monument in the world, this ancient temple complex showcases the magnificent architecture of the Khmer Empire.</p>
+                            <button class="view-details" data-id="angkor">View Details</button>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="Kyoto Temples">
+                        <div class="card-content">
+                            <h4>Kyoto, Japan</h4>
+                            <p>Home to over 1,600 Buddhist temples and 400 Shinto shrines, Kyoto preserves Japan's ancient cultural heritage in a modern setting.</p>
+                            <button class="view-details" data-id="kyoto">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Country-based Recommendations -->
+            <div class="recommendation-category">
+                <h3>Explore by Country: Italy</h3>
+                <div class="recommendation-grid">
+                    <div class="recommendation-card">
+                        <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5" alt="Venice Italy">
+                        <div class="card-content">
+                            <h4>Venice</h4>
+                            <p>Experience the romance of Venice's winding canals, historic architecture, and world-famous gondola rides in this unique floating city.</p>
+                            <button class="view-details" data-id="venice">View Details</button>
+                        </div>
+                    </div>
+                    <div class="recommendation-card">
+                        <img src="https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b" alt="Amalfi Coast Italy">
+                        <div class="card-content">
+                            <h4>Amalfi Coast</h4>
+                            <p>Discover the breathtaking cliff-side villages, Mediterranean views, and charming beaches along Italy's most picturesque coastline.</p>
+                            <button class="view-details" data-id="amalfi">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Modal -->
+    <div id="destination-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-details"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Wanderlust</h3>
+                    <p>Your journey begins here</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for travel tips and exclusive offers</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wanderlust Travel Recommendations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
